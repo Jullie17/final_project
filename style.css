@@ -1,0 +1,397 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 40px;
+  padding: 20px;
+  background-color: rgb(240, 240, 236);
+  overflow: auto;
+}
+
+/*Header - make header shrinks as I scroll */
+#header {
+  background-color: #f1f1f1; /* Grey background */
+  padding: 50px 10px; /* Some padding */
+  color: black;
+  text-align: center; /* Centered text */
+  font-size: 90px; /* Big font size */
+  font-weight: bold;
+  position: fixed; /* Fixed position - sit on top of the page */
+  top: 0;
+  width: 100%; /* Full width */
+  transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+}
+/*Header- make header shrinks as I scroll --------------------------------------------------------- */
+
+/* scrolling back to the top --------------------------------------------------------*/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: black; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+/*scrolling back to the top END --------------------------------------------------------*/
+
+/* scrolling button to specific part of the page --------- */
+html {
+  scroll-behavior: smooth;
+}
+
+#section1 {
+  background-color: white;
+  border-radius: 10px;
+  /*border-style: solid;
+  border-color: red;*/
+  margin: 50px;
+  padding: 30px;
+}
+
+#section2 {
+  background-color: white;
+  border-radius: 10px;
+  /*border-style: solid;
+  border-color: red;*/
+  margin: 50px;
+  padding: 30px;
+}
+#section3{
+  background-color: white;
+  border-radius: 10px;
+  /*border-style: solid;
+  border-color: red;*/
+  margin: 50px;
+  padding: 30px;
+}
+/* scrolling button to specific part of the page --------- */
+
+h1{
+  font-family: 'Montserrat';
+  font-weight: lighter;
+  color: black;
+  text-align: center;
+  font-size: 150px;
+}
+h2{
+  font-family: 'Anybody';
+  font-weight: 350;
+  font-size: 70px;
+  color: black;
+}
+h4{
+  font-family: 'IBM Plex Mono';
+  font-weight: normal;
+  font-size: 35px;
+}
+h5{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+}
+p{
+  font-family: 'Inconsolata';
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(35,35,35);
+}
+a, a:default, a:visited, a:active{
+  font-family: 'IBM Plex Mono';
+  color: black;
+  text-decoration: none;
+}
+
+/* scroll bar container */
+.scrollbar{
+  display: flex;
+  padding: 10px;
+  gap: 20px;
+  background-color: lightgrey;
+  border-radius: 5px;
+  margin: 10px;
+}
+.scrollbutton{
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  flex-basis: 100%;
+  text-align: center;
+}
+
+/*.main{
+  display: flex;
+  padding: 10px;
+  gap: 15px; /* Used to place gaps between the left and right content section */
+  /*background-color: #BBBD44;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #FCD744;
+} */
+
+.statsContainer{
+  display: flex;
+  margin: 20px;
+  padding: 50px;
+  gap: 20px;
+  background-color: white;
+  border-radius: 30px;
+}
+/* container of stats in the main page - how many ppl use social media */
+.statsColumn{
+  display: flex;
+  gap: 20px; /* Used to place gaps between the individual pieces of content */
+  flex-direction: column;
+  flex-basis: 100%; /* We can use this to force all three columns to be the same width */
+  /*border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  background-color: white; */
+  text-align: center;
+}
+.statsColumn img{
+  width: 100%;
+  border-style: solid;
+  border-color: black;
+  border-radius: 20px;
+  border-width: 3px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* font change Classes */
+.abrilfont{
+  font-family: 'Abril Fatface', cursive;
+}
+.anybodyfont{
+  font-family: 'Anybody', cursive;
+}
+.bebasfont{
+  font-family: 'Bebas Neue', cursive;
+}
+.ibmfont{
+  font-family: 'IBM Plex Mono';
+  font-weight: normal;
+}
+
+.inconsolatafont{
+  font-family: 'Inconsolata';
+  font-weight: lighter;
+}
+.latofont{
+  font-family: 'Lato', sans-serif;
+}
+.montserratfont{
+  font-family: 'Montserrat', sans-serif;
+}
+.patuafont{
+  font-family: 'Patua One', cursive;
+}
+.ptsfont{
+  font-family: 'PT Serif', serif;
+}
+.robotofont{
+  font-family: 'Roboto Mono', monospace;
+}
+.yesevaonefont{
+  font-family: 'Yeseva One', cursive;
+}
+
+
+/* font size change - emphasize, smaller */
+.bigger{
+  font-size: 60px;
+}
+.smaller{
+  font-size: 20px;
+}
+.medium{
+  font-size: 55px;
+  font-weight: 200;
+}
+.sec3font{
+  font-size: 30px;
+  font-weight: 100;
+}
+.lineheight{
+  line-height: 1.3;
+}
+
+/* font emphasize, highlight, underline */
+.coral{
+  color: rgb(254, 0, 76);
+}
+.lightgrey{
+  color: rgb(158, 158, 158);
+}
+.blue{
+  color: blue;
+}
+.red{
+  color: red;
+}
+
+/*text align*/
+.center{
+  text-align: center;
+}
+.lefttext{
+  text-align: left;
+}
+.righttext{
+  text-align: right;
+}
+.margin1{
+  margin: 50px;
+}
+
+/* Sidebar menu with opacity */
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* Sidebar menu with opacity END */
+
+/* quotes slideshow*/
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
