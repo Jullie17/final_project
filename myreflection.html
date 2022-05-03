@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anybody:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Patua+One&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Yeseva+One&display=swap" rel="stylesheet">
+<title>The Social Dilemma</title>
+  </head>
+  <style>
+    body, html {
+  height: 100%
+}
+
+.bgimg {
+  /* Full-screen */
+  height: 100%;
+  /* Center the background image */
+  background-position: center;
+  /* Scale and zoom in the image */
+  background-size: cover;
+  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+  position: relative;
+  /* Add a white text color to all elements inside the .bgimg container */
+  color: white;
+  /* Add a font */
+  /* Set the font-size to 25 pixels */
+  font-size: 25px;
+}
+
+/* Position text in the top-left corner */
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+/* Position text in the bottom-left corner */
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+/* Position text in the middle */
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the <hr> element */
+hr {
+  margin: auto;
+  width: 40%;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid black; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+  </style>
+
+  <script>
+    // Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+  </script>
+
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">HOME</a>
+      <a href="ig.html">INSTAGRAM Prob / Sol</a>
+      <a href="film.html">The Social Dilemma</a>
+    </div>
+
+    <div id="main">
+      <span class="ibmfont"style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+    </div>
+    <script src="script.js"></script>
+
+
+
+    <h1>My Reflection</h1>
+    <hr>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="script.js"></script>
+
+
+    <div class="bgimg">
+    <div class="topleft">
+      <a href="film.html"><p>Go BACK</p></a>
+    </div>
+    <div class="middle">
+      <h1>COMING SOON</h1>
+      <div class="loader"></div>
+      <hr>
+      <p>Still writing on reflection...</p>
+    </div>
+  </div>
+
+  </body>
+</html>
