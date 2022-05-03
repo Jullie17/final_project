@@ -75,6 +75,42 @@ html {
   margin: 50px;
   padding: 30px;
 }
+
+#igs1{
+  background-color: transparent;
+  border-radius: 10px;
+  margin: 50px;
+  padding: 30px;
+}
+#igs2{
+  background-color: transparent;
+  border-radius: 10px;
+  margin: 50px;
+  padding: 30px;
+}
+#igs3{
+  background-color: transparent;
+  border-radius: 10px;
+  margin: 50px;
+  padding: 30px;
+}
+#igs4{
+  background-color: transparent;
+  border-radius: 10px;
+  margin: 50px;
+  padding: 30px;
+}
+
+#igs1 p{
+  line-height: 2;
+}
+#igs2 p{
+  line-height: 2;
+}
+#igs3,#igs4 p{
+  line-height: 1.5;
+}
+
 /* scrolling button to specific part of the page --------- */
 
 h1{
@@ -100,6 +136,12 @@ h5{
   font-weight: bold;
   text-align: left;
 }
+h6{
+  font-size: 25px;
+  font-weight: normal;
+  text-align: left;
+  font-family: 'Montserrat'
+}
 p{
   font-family: 'Inconsolata';
   font-weight: 400;
@@ -110,6 +152,9 @@ a, a:default, a:visited, a:active{
   font-family: 'IBM Plex Mono';
   color: black;
   text-decoration: none;
+}
+a:hover{
+  color: white;
 }
 
 /* scroll bar container */
@@ -143,7 +188,7 @@ a, a:default, a:visited, a:active{
 .statsContainer{
   display: flex;
   margin: 20px;
-  padding: 50px;
+
   gap: 20px;
   background-color: white;
   border-radius: 30px;
@@ -184,6 +229,55 @@ a, a:default, a:visited, a:active{
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+}
+
+/* flexbox for the film page */
+.filmContainer{
+  display: flex;
+  margin: 50px;
+  padding: 30px;
+  gap: 5px;
+  background-color: white;
+  border-radius: 30px;
+}
+.filmColumn{
+  display: flex;
+  /*margin: 10px;*/
+  padding: 30px;
+  gap: 20px; /* Used to place gaps between the individual pieces of content */
+  flex-direction: column;
+  flex-basis: 100%; /* We can use this to force all three columns to be the same width */
+  /*border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  background-color: white; */
+  text-align: left;
+}
+.filmColumn img{
+  width: 100%;
+  border-style: solid;
+  border-color: black;
+  border-radius: 20px;
+  border-width: 3px;
+}
+.filmColumn a{
+  background-color: lightgrey;
+  border-radius: 20px;
+  text-align: center;
+}
+.filmColumn a:hover {
+  background-color: orangered;
+  /*border-style: solid;
+  border-width: medium;
+  border-color: gold;*/
+  color: white;
+}
+.filmColumn ul{
+  font-family: 'Roboto Mono';
+  font-weight: normal;
+  color: black;
+  font-size: 25px;
+  line-height: 1.5;
 }
 
 /* font change Classes */
