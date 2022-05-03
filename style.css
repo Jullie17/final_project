@@ -154,7 +154,7 @@ a, a:default, a:visited, a:active{
   text-decoration: none;
 }
 a:hover{
-  color: white;
+  color: orange;
 }
 
 /* scroll bar container */
