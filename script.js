@@ -35,7 +35,7 @@ function topFunction() {
 // 2. making button that scrolls back to top of the page End --------------------------------------
 
 //3. sidebar menu with opacity
-function openNav() {
+/*function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
@@ -45,7 +45,7 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
   document.body.style.backgroundColor = "white";
-}
+}*/
 // 3. Sidebar Menu with opacity END
 
 // 5. film trailer in film.html
